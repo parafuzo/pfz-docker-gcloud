@@ -18,7 +18,6 @@ RUN mkdir /.ssh
 ENV PATH /google-cloud-sdk/bin:$PATH
 
 COPY gcloud-auth.sh /app/
-COPY image-update.sh /app/
 WORKDIR /app
 
 CMD ["/bin/bash"]
